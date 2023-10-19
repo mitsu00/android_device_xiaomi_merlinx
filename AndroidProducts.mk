@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_merlinx.mk
+    $(LOCAL_DIR)/ancient_merlinx.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_merlinx-user \
-    evolution_merlinx-userdebug \
-    evolution_merlinx-eng
+    ancient_merlinx-user \
+    ancient_merlinx-userdebug \
+    ancient_merlinx-eng

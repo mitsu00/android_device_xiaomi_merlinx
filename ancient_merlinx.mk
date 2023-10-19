@@ -12,14 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/merlinx/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Debugging Flags
 TARGET_INCLUDE_MATLOG := false
 TARGET_DEFAULT_ADB_ENABLED := false
-
-# Evolution X flags
-EVO_BUILD_TYPE := COMMUNITY
 
 # Another stuff
 TARGET_HAS_UDFPS := false
@@ -28,6 +25,9 @@ TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_EPPE := true
+
+# Ancient Flag
+ANCIENT_GAPPS := true
 
 # Pixel customization
 TARGET_USE_PIXEL_FRAMEWORK := true
@@ -39,7 +39,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
-PRODUCT_NAME := evolution_merlinx
+PRODUCT_NAME := ancient_merlinx
 PRODUCT_DEVICE := merlinx
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
